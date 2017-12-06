@@ -33,7 +33,7 @@ ul,li
   background-position: center
   background-size: cover
   height: 568px
-  padding: 34px 44px 47px 44px
+  padding: 32px 45px
   display: flex
   flex-direction: column
   justify-content: space-between
@@ -49,9 +49,8 @@ ul,li
   left: 0
   bottom: 0
   width: 100%
-  height: 450px
-  opacity: 0.6
-  background-image: linear-gradient(-180deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 100%)
+  height: 568px
+  background-image: linear-gradient(-179deg, rgba(0,0,0,0.00) 2%, rgba(1,4,5,0.21) 35%, #05131A 100%)
 
 .article-text
   margin-top: auto
@@ -59,15 +58,15 @@ ul,li
 
 .article-title
   color: $color_white
-  font-size: 50px
-  line-height: 56px
+  font-size: 46px
+  line-height: 54px
   font-weight: 600
   margin-bottom: 12px
 
 .article-text__item
   color: $color_white
-  font-size: 22px
-  line-height: 28px
+  font-size: 24px
+  line-height: 32px
   font-weight: 300
   margin-bottom: 36px
 
@@ -75,7 +74,7 @@ ul,li
   position: relative
   color: $color_white
   font-size: 12px
-  line-height: 14px
+  line-height: 16px
   font-weight: 300
   padding-left: 32px
   &:before
@@ -126,25 +125,20 @@ ul,li
       text-decoration none
 
 .text-box
-  padding: 45px
+  padding: 64px 45px
   background-color: $color_white
   margin-bottom: 10px
 
 .text-box--upper
   position: relative
-  padding-bottom: 50px
+  padding-top: 45px
+  padding-left: 37px
   .main-text
     font-weight: 400
 
-.text-box--facts
-  background: #EFF9FF
-
-.text-box--conclusions
-  background: #ECF8FF
-
-.text-box--maps
-  .block-title
-    margin-bottom: 24px
+.text-box--wide
+  padding-left: 0
+  padding-right: 0
 
 .under-title__text
   font-size: 14px
@@ -152,78 +146,15 @@ ul,li
   font-weight: 400
   margin-bottom: 24px
 
-.facts-content
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
-
-.facts-list
-  width: 714px
-
-.facts-list__text
-  font-size: 16px
-  line-height: 28px
-  color: #222B43
-  font-weight: 400
-
 .semibold
   font-weight: 600
 
-.facts-content
-  position: relative
-
-.facts-list__item
-  position: relative
-  padding-left: 31px
-  padding-bottom: 32px
-  &:before
-    content: ''
-    width: 15px
-    height: 17px
-    position: absolute
-    left: 0
-    top: 6px
-    background: url(images/icons/list-item.svg) center no-repeat
-
-  &:after
-    content: ''
-    position: absolute
-    width: 1px
-    height: calc(100% - 15px)
-    top: 21px
-    left: 7px
-    background: url(images/svg/svg_pattern.svg) center repeat
-
-  &:last-child
-    &:after
-      display: none
-
-  &:last-child
-    padding-bottom: 0
-
-.map-block
-  margin-bottom: 72px
-  &:last-child
-    margin-bottom: 0
-
-.map-img
-  width: 1130px
-  cursor: pointer
-
-.map-video__wrapper
-  display: flex
-  justify-content: center
-  video
-    width: 1130px
-    height: 400px
-
 .upper-pic
   position: absolute
-  left: 34px
+  left: 45px
   img
-    width: 120px
-    height: 120px
+    width: 263px
+    height: 300px
 
 .under-title
   color: #0A0C0D
@@ -231,14 +162,16 @@ ul,li
   line-height: 32px
   font-weight: 200
   margin-bottom: 24px
-  padding-left: 150px
+  padding-left: 308px
+
+.under-title--last
+  margin-bottom: 58px
 
 .main-text
   color: #0A0C0D
   font-size: 14px
   line-height: 24px
   font-weight: 300
-  margin-bottom: 30px
   &:last-child
     margin-bottom: 0
 
@@ -254,9 +187,6 @@ ul,li
   margin-bottom: 30px
   color: #103144
   text-align: center
-  font-weight: 600
-
-.semibold
   font-weight: 600
 
 .info-text
@@ -289,39 +219,183 @@ ul,li
   line-height: 10px
   position: relative
   top: 0
-  &--tbl
-    color: #ffffff
 
-.conclusion-block
-  display: flex
-  min-height: 104px
-  flex-direction: row
-  justify-content: flex-start
-  align-items: center
-  padding: 24px
-  margin-bottom: 24px
-  background: #ffffff
-  border-radius: 6px
-  box-shadow: 0 6px 16px 0 rgba(13,93,131,0.10)
-  box-sizing: border-box
-  &:last-child
+.metrics
+  padding: 32px
+  border: 1px solid #fedb74
+  background: #fefbee
+  border-radius: 3px
+
+  .main-text
+    margin-bottom: 24px
+
+  .main-text:last-child
     margin-bottom: 0
 
-.conclusions-num
-  margin-right: 24px
+.metrics__list
+  margin-bottom: 24px
 
-.conclusions-text
-  @extend .under-title__text
-  margin-bottom: 0
+.metrics__list-item
+  position: relative
+  padding-left: 28px
+  font-size: 14px
+  line-height: 22px
+  font-weight: 300
+
+  &:not(:last-child)
+    margin-bottom: 10px
+
+  &:before
+    content: ''
+    width: 16px
+    height: 16px
+    position: absolute
+    left: 0
+    top: 2px
+    background: url(images/icons/upper-bullet.svg) center no-repeat
+
+
+.intro-img
+  position: relative
+
+.small-img
+  position: absolute
+  right: 44px
+  bottom: 48px
+
+.rankings__item
+  display: flex
+  flex-wrap: wrap
+  &:not(:last-child)
+    margin-bottom: 45px
+
+.rankings__item-header
+  display: flex
+  align-items: center
+  width: 100%
+  margin-left: 80px
+  margin-bottom: 18px
+
+  .rate-block
+    margin-right: 16px
+
+.rankings__item-title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+
+.rankings__wrapper
+  width: 800px
+  margin: 0 auto
+
+.rankings__item-num-block
+  width: 67px
+  margin-right: 13px
+
+.rankings__item-num
+  font-size: 60px
+  line-height: 64px
+  font-weight: 700
+  text-align: right
+
+.rankings__item-text
+  width: 720px
+  @extend .main-text
+
+.text-box--grumpiest
+  .rate-block
+    background: linear-gradient(-90deg, #FD5E56 3%, #E23C33 100%)
+
+  .rankings__item-num
+    color: #fededd
+
+.text-box--happiest
+  .rate-block
+    background: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
+
+  .rankings__item-num
+    color: #d7eef0
+
+.btn-container
+  display: flex
+  justify-content: center
+  margin-top: 32px
+
+.btn-main
+  display: inline-block
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  text-transform: uppercase
+  color: #d31858
+  border-radius: 5px
+  padding: 14px 24px
+  border: 1px solid #d31858
+  cursor: pointer
+  box-sizing: border-box
+  &:after
+    content: ''
+    display: inline-block
+    position: relative
+    top: 4px
+    width: 20px
+    height: 20px
+    margin-left: 10px
+    background: url('images/icons/btn-icon-safe.svg') center no-repeat
+
+  .btn-main__text
+    border-bottom: 1px solid rgba(211,24,88,0.3)
+
+  &:hover
+    background-image: linear-gradient(90deg,#b70a36 0,#e01d6d 100%)
+    color: #ffffff
+    border: 1px solid #ffffff
+    &:after
+      background: url('images/icons/btn-icon-hover.svg') center no-repeat
+    .btn-main__text
+      border-bottom: none
+
+.text-box--grumpiest
+  .btn-main
+    border: 1px solid #fedfdd
+    color: #e53f36
+
+    &:after
+      background: url('images/icons/btn-icon-safe-red.svg') center no-repeat
+
+    &:hover
+      color: #ffffff
+      background-image: linear-gradient(-90deg, #FF7962 0%, #FF4433 98%)
+      &:after
+        background: url('images/icons/btn-icon-hover.svg') center no-repeat
+      .btn-main__text
+        border-bottom: none
+
+.text-box--happiest
+  .btn-main
+    border: 1px solid #d31858
+    color: #30a1ab
+    border: 1px solid #dbeef0
+
+    &:hover
+      color: #ffffff
+      background-image: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
+
+
+  .btn-main__text
+    border-bottom: 1px solid #dbeef0
 
 .text-box--methodology
   border-radius: 0 0 5px 5px
+  .main-text
+    &:not(:last-child)
+      margin-bottom: 24px
 
 .methodology-content
   display: flex
   flex-direction: row
   align-items: flex-start
-  margin-bottom: 30px
+  margin-bottom: 45px
 
 .methodology-img
   position: relative
@@ -349,6 +423,52 @@ ul,li
   margin-left: 20px
   margin-right: 20px
   margin-bottom: 36px
+
+.methodology-metrics
+  margin-left: 104px
+  margin-bottom: 45px
+
+.methodology-links__title
+  font-size: 18px
+  line-height: 20px
+  font-weight: 600
+  margin-bottom: 12px
+
+.methodology-links
+  margin-left: 104px
+
+.methodology-links__title
+  font-size: 18px
+  line-height: 20px
+  font-weight: 600
+  margin-bottom: 12px
+
+.methodology-metrics__list-item
+  position: relative
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  padding-left: 14px
+  font-style: italic
+  &:before
+    content: ''
+    width: 6px
+    height: 6px
+    position: absolute
+    left: 0
+    top: 10px
+    background: url(images/icons/methodology-bullet.svg) center no-repeat
+
+.methodology-links__list-item
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+
+.methodology-links__link
+  color: #21abf1
+  border-bottom: 1px solid #d1e9f5
+  &:hover
+    border-bottom: none
 
 .related
   background: #FFFFFF
@@ -443,6 +563,34 @@ ul,li
     span
       border-bottom: none
 
+.rate-block
+  background: #2137B2
+  border-radius: 3px
+  font-size: 14px
+  color: #fff
+  letter-spacing: 0
+  font-weight: 600
+  line-height: 16px
+  height: 26px
+  padding: 5px 8px 3px 8px
+  display: inline-block
+  position: relative
+  vertical-align: text-bottom
+  overflow hidden
+  box-sizing border-box
+  flex-shrink: 0
+  &:before
+    content ''
+    background-size: 100% auto
+    display: block
+    background-image: url(images/svg/icon_rate.svg)
+    position: absolute
+    background-repeat: no-repeat
+    width: 13px
+    height: 18px
+    left: 10px
+    top: 6px
+
 .mobile-only-show
   display: none
 
@@ -474,20 +622,3 @@ ul,li
     border: 1px solid transparent
     background: #f8dce5
     transition: .25s
-
-.pswp__img
-  background: #ffffff
-  border: 15px solid #ffffff
-
-.map-video__wrapper
-  position: relative
-  padding-bottom: 56.25%
-  height: 0
-  overflow: hidden
-
-.map-video__wrapper iframe, .map-video__wrapper object, .map-video__wrapper embed
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%

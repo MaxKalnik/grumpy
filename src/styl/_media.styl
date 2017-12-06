@@ -3,41 +3,44 @@
     width: 1360px
 
   .main-pic
-    padding: 32px 60px 32px 60px
+    padding: 32px 60px 34px 60px
     background-position center
 
   .text-box
-    padding: 60px
+    padding: 64px 60
     &--upper
       position: relative
+      padding: 45px 60px 64px 60px
+
+  .text-box--wide
+    padding-left: 0
+    padding-right: 0
 
   .upper-pic
     left: 60px
 
-  .under-title
-    min-height: 120px
+  .under-title--last
+    margin-bottom: 123px
 
-  .map-img
-    width: 1240px
+  .article-title
+    margin-bottom: 24px
 
-  .map-video__wrapper
-    video
-      width: 1240px
-      height: 400px
+  .article-text__item
+    margin-bottom: 28px
 
-  .facts-list
-    width: 814px
+  .small-img
+    right: 59px
 
-@media (max-width: 1850px)
+@media (max-width: 1849px)
   .content
     width: 1220px
 
   .page__wrap
     background-image url(images/footer_bg.png) , url(images/svg/clouds_bg.svg) , none, linear-gradient(-180deg, #34c4f0 0, #1c90e2 100%)
 
-  .main-pic
-    padding-left: 60px
-    height: 635px
+  .text-box--wide
+    padding-left: 0
+    padding-right: 0
 
   .related-head
     padding: 0 25px
@@ -45,26 +48,20 @@
   .related-list
     padding: 34px 25px 0
 
-  .methodology-article
-    padding-top: 23px
-    padding-left: 141px
-    &:before
-      left: 20px
-
-@media (max-width: 1370px)
+@media (max-width: 1439px)
   .content
     width: 980px
 
   .article-title
-    font-size: 40px
+    font-size: 38px
     font-weight: 600
+    margin-bottom: 21px
 
   .article-text__item
-    width: 650px
     font-size: 24px
     line-height: 30px
     font-weight: 300
-    margin-bottom: 42px
+    margin-bottom: 46px
 
   .article-author
     font-size: 12px
@@ -73,28 +70,29 @@
 
   .main-pic
     height: 568px
+    background-image url("images/main_pic_1020.png")
+    background-image: -webkit-image-set(url(images/main_pic_1020.png) 1x, url(images/main_pic_1020@2x.png) 2x)
     background-repeat no-repeat
     background-position center
-    padding: 32px 25px 45px 25px
-
-  .under-title
-    margin-bottom: 32px
-    padding-left: 150px
-
-  .upper-pic
-    left: 25px
+    padding: 32px 45px 45px 25px
 
   .text-box
-    padding-left: 25px
-    padding-right: 25px
+    padding: 45px
+    &--upper
+      padding: 45px
 
-  .map-img
-    width: 930px
+  .under-title--last
+    margin-bottom: 45px
 
-  .map-video__wrapper
-    video
-      width: 930px
-      height: 400px
+  .text-box--wide
+    padding-left: 0
+    padding-right: 0
+
+  .methodology-content
+    margin-bottom: 30px
+
+  .methodology-metrics
+    margin-bottom: 30px
 
   .related-head
     padding: 0 20px
@@ -121,16 +119,17 @@
     max-width: 740px
 
   .article-title
-    font-size: 32px
-    line-height: 38px
+    font-size: 31px
+    line-height: 39px
     font-weight: 600
+    margin-bottom: 12px
 
   .article-text__item
     width: 650px
-    font-size: 24px
-    line-height: 30px
+    font-size: 22px
+    line-height: 32px
     font-weight: 300
-    margin-bottom: 12px
+    margin-bottom: 36px
 
   .article-author
     font-size: 12px
@@ -138,92 +137,56 @@
     font-weight: 300
 
   .main-pic
-    height: 345px
-    padding: 32px 25px 32px 25px
-    background-image url("images/main_pic_768.png")
-    background-image: -webkit-image-set(url(images/main_pic_768.png) 1x, url(images/main_pic_768@2x.png) 2x)
+    padding: 32px 25px 42px 25px
+    background-image url("images/main_pic_780.png")
+    background-image: -webkit-image-set(url(images/main_pic_780.png) 1x, url(images/main_pic_780@2x.png) 2x)
     background-position center
 
   .main-pic__mask
-    height: 230px
+    height: 568px
 
   .top-menu__link
     margin: 0 10px
 
   .text-box
-    padding: 32px 25px 32px 25px
+    padding: 45px 25px
     &--upper
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
-      padding-left: 25px
-      padding-bottom: 24px
-      .upper-pic
-        position: static
+      padding: 45px 25px
 
       .under-title
-        width: 545px
-        margin-bottom: 18px
+        margin-bottom: 32px
 
-      .main-text
-        width: 100%
-        margin-bottom: 20px
+  .small-img
+    right: 25px
+    bottom: 36px
 
-  .text-box--maps
-    padding-bottom: 40px
+  .upper-pic
+    left: 25px
+    top: 25px
 
-  .methodology-sources__item
-    width: auto
+  .text-box--wide
+    padding-left: 0
+    padding-right: 0
+
+  .under-title.under-title--last
+    padding-left: 0
+    margin-bottom: 44px
 
   .block-title
     margin-bottom: 30px
 
-  .under-title
-    font-size: 16px
-    padding-left: 0
-
-  .map-block
-    margin-bottom: 41px
-    &:last-child
-      margin-bottom: 0
-
-  .map-img
-    width: 690px
-
-  .map-video__wrapper
-    video
-      width: 690px
-      height: 400px
-
-  .conclusion-block
-    align-items: flex-start
-
-  .conclusions-num
-    position: relative
-    top: 5px
-
   .info-text
     width: 690px
 
-  .facts-list
-    width: 100%
+  .rankings__wrapper
+    width: 620px
 
-  .facts-list__item
-    padding-bottom: 24px
-
-    &:first-child,
-    &:nth-child(2)
-      margin-right: 244px
-
-    &:last-child
-      padding-bottom: 0
-
-  .facts-img
-    position: absolute
-    width: 229px
-    right: 0
-    top: 60px
+  .rankings__item-text
+    width: 540px
 
   .related-head
     padding: 0 20px
@@ -252,11 +215,7 @@
   .text-box.last
     padding-top: 25px
 
-  .popup
-    .controls
-      bottom: 260px
-
-@media (max-width: 759px)
+@media (max-width: 779px)
   .content
     margin-left: 10px
     margin-right: 10px
@@ -304,15 +263,16 @@
 
   .main-pic
     height: 345px
-    padding: 16px 12px 16px 12px
+    padding: 16px 12px 36px 12px
 
   .main-pic__mask
     height: 270px
 
   .text-box
-    padding: 32px 12px 32px 12px
+    padding: 30px 12px
     &--upper
       justify-content: center
+      padding: 25px 12px 42px 12px
       .upper-pic
         margin-bottom: 32px
       .under-title
@@ -328,51 +288,57 @@
         line-height: 24px
         font-weight: 300
 
-  .map-block
+  .text-box--wide
+    padding-left: 0
+    padding-right: 0
+
+  .upper-pic
+    position: static
+    width: 250px
+    height: 285px
+    margin-bottom: 50px
+
+  .under-title
+    padding-left: 0
+
+  .small-img
+    right: 68px
+    bottom: 28px
+
+  .rankings__wrapper
+    width: calc(100% - 24px)
+
+  .rankings__item
     margin-bottom: 32px
-    &:last-child
-      margin-bottom: 0
 
-  .facts-content
-    flex-direction: column
+  .rankings__item-num-block
+    order: 1
+    width: auto
+    margin: 0 auto 16px auto
 
-  .facts-list
+  .rankings__item-header
     order: 2
 
-  .facts-list__item
-    padding-bottom: 16px
+  .rankings__item-text
+    order: 3
 
-    &:first-child,
-    &:nth-child(2)
-      margin-right: 0
-
-    &:last-child
-      padding-bottom: 0
-
-  .facts-img
-    position: static
-    width: 243px
-    align-self: center
-    margin-bottom: 24px
-
-  .map-img
+  .rankings__item-text
     width: 100%
 
-  .map-video__wrapper
-    video
-      width: 100%
-      height: 300px
-
-  .conclusions-num
-    margin-right: 12px
-
-  .conclusions-text
-    width: calc(100% - 40px)
-    flex-shrink: 1
+  .rankings__item-header
+    margin-left: 0
 
   .methodology-content
     flex-direction: column
     align-items: center
+    margin-bottom: 24px
+
+  .methodology-metrics
+    margin-left: 0
+    margin-bottom: 24px
+
+  .methodology-links
+    margin-left: 0
 
   .info-text
     width: calc(100% - 24px)
@@ -382,15 +348,20 @@
       top: -13px
       transform: translateX(-50%)
 
+  .btn-container
+    margin: 24px 12px 0 12px
+
+  .btn-main
+    width: 100%
+    display: block
+    padding: 10px 12px
+    font-size: 10px
+    text-align: center
+    &:after
+      display: none
+
   .methodology-img
     margin-right: 0
-    margin-bottom: 24px
-
-  .methodology-brands__img
-    &:first-child
-      margin-right: 20px
-
-  .under-title
     margin-bottom: 24px
 
   .primary-title
@@ -407,18 +378,6 @@
   .block-title
     font-size 26px
     line-height: 34px
-
-  .text-box--maps
-    .block-title
-      margin-bottom: 16px
-
-  .under-title__text
-    margin-bottom: 16px
-
-  .main-article--table
-    .block-title
-      font-size 26px
-      line-height: 34px
 
   .related-list
     padding-top: 19px
