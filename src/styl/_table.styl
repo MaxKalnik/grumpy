@@ -1,36 +1,230 @@
 @import "_variable.styl"
 
-.text-box--purple
-  .ranking-table
-    background: linear-gradient(90deg, #B70A36 0%, #E01D6D 100%)
+.ranking-table
+  width: 100%
+  border-collapse: collapse
+  border-radius: 5px
+  border: 1px solid #E6E6F2
+  border-top: none
+  box-sizing: border-box
+  thead
+    th
+      height: 46px
+      font-size: 10px
+      line-height: 16px
+      font-weight: bold
+      color: #ffffff
+      text-transform: uppercase
+      text-align: center
+      padding: 0 12px
+      box-sizing: border-box
+      border-right: 1px solid rgba(255, 255, 255, 0.3)
+      &:last-child
+        border-right: none
 
-   tbody
+  tbody
+    td
+      height: 51px
+      font-size: 12px
+      line-height: 16px
+      font-weight: 600
+      color: #0A0C0D
+      padding: 0 12px
+      box-sizing: border-box
+      text-align: center
+
     tr
       background: #ffffff
-      border-bottom: 1px solid #F2E6E8
+      border-bottom: 1px solid #e6eef2
       &:nth-child(odd)
-        background: #FDFBFE
+        background: #f2f6f8
       &:last-child
         border-bottom: none
-    td
-      &:first-child
-        color: #D0021B
 
-.text-box--green
+
+.text-box--g-table,
+.text-box--h-table
+  border-radius: 5px
+  .rate-block
+    min-width: 61px
+
+.text-box--table
+  .block-title
+    margin-bottom: 45px
+
+.breadcrumbs
+  &__wrap
+    width: auto
+    margin-bottom: 45px
+    box-shadow: none
+
+  &__link
+    color: $main_color
+    letter-spacing: 0
+    line-height: 42px
+    text-decoration: none
+    $ultraThin()
+    &:hover
+      text-decoration underline
+      text-decoration-color: #A3DCF0
+
+  &__item
+    &:nth-child(3),
+    &:last-child
+      overflow: hidden
+      text-overflow: ellipsis
+
+.ranking-table
+  background: linear-gradient(90deg,#1c97ed 0,#43ccf8 100%)
+
+.text-box--g-table
   .ranking-table
-    background: linear-gradient(90deg, #00890B 0%, #00A812 100%)
+    background-image: linear-gradient(-90deg, #FD5E56 3%, #E23C33 100%)
 
-   tbody
+  .ranking-table.ranking-table--fixed
+    background-image: linear-gradient(-90deg, #E93F38 3%, #E23C33 100%)
+
+  .rate-block
+    background-image: linear-gradient(-90deg, #FD5E56 3%, #E23C33 100%)
+
+  tbody
     tr
-      background: #ffffff
-      border-bottom: 1px solid #E6F2E7
+      border-bottom: 1px solid #fee6e5
       &:nth-child(odd)
-        background: #F8FCF8
-      &:last-child
-        border-bottom: none
+        background: #fff7f6
+
+  .btn-go-back
+    color: #e53f36
+    border: 1px solid #fedfdd
+    transition: .25s
+    &:hover
+      background: #e53f36
+      color: #ffffff
+      border-color: #ffffff
+
+.text-box--h-table
+  .ranking-table
+    background-image: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
+
+  .ranking-table.ranking-table--fixed
+    background-image: linear-gradient(-90deg, #30A0AB 0%, #30A0AB 100%)
+
+  .rate-block
+    background-image: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
+
+  tbody
+    border-bottom: 1px solid #def3f4
+    tr
+      &:nth-child(odd)
+        background: #def3f4
+
+  .btn-go-back
+    color: #30a1ab
+    border: 1px solid #dbeef0
+    transition: .25s
+    &:hover
+      background: #30a1ab
+      color: #ffffff
+      border-color: #ffffff
+
+.mobile-only
+  .ranking-table--fixed
+    background: linear-gradient(90deg,#198dea 0,#2099ED 100%)
+
+.btn-go-back
+  color: #24A0EE
+  border: 1px solid #24A0EE
+  border-radius: 5px
+  padding: 12px 24px
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  text-transform: uppercase
+  cursor: pointer
+  transition: .25s
+  &:hover
+    background: #24A0EE
+    color: #ffffff
+    border-color: #ffffff
+
+.mobile-only
+  display: none
+
+.cell-with-icon
+  &:before
+    content: ''
+    position: relative
+    top: 1px
+    display: inline-block
+    width: 11px
+    height: 11px
+    margin-right: 6px
+    background: url(images/svg/table-star.svg) center no-repeat
+
+@media (max-width: 779px)
+
+  .tables-container
+    display: flex
+    flex-direction: row
+
+  .mobile-only
+    width: 120px
+    display: flex
+    flex-direction: column
+
+  .ranking-table
+    thead
+      th
+        height: 56px
+        padding: 0 8px
+
+    tbody
+      td
+        padding: 0 8px
+
+  .ranking-table.ranking-table--fixed
+    width: 120px
+    position: relative
+    border-radius: 5px 0 0 0
+    background: #b70a36
+    border-right: none
+    box-shadow: 2px 0 13px 0 rgba(0,0,0,0.16)
+
+    th
+      vertical-align: middle
+
+    th:last-child
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 60px
+        background: rgba(255, 255, 255, 0.3)
+        right: 0
+        top: 0
 
     td
       &:first-child
-        color: #007F0C
+        width: 2%
 
+  .ranking-table__wrapper
+    width: calc(100% - 120px)
+    overflow-x: scroll
+    padding-left: 0
+    padding-right: 0
 
+  .ranking-table--data
+    border-radius: 0 5px 5px 5px
+    border-left: none
+    thead
+      th
+        &:first-child,
+        &:nth-child(2)
+          display: none
+
+    tbody
+      td
+        &:first-child,
+        &:nth-child(2)
+          display: none

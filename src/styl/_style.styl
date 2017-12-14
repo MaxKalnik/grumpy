@@ -197,15 +197,14 @@ ul,li
   line-height: 26px
   font-weight: 300
   font-style: italic
-  border: 1px solid #ABD7F1
   border-radius: 5px
   margin-bottom: 45px
   box-sizing: border-box
   &:before
     content: ''
     position: absolute
-    height: 24px
-    width: 24px
+    height: 32px
+    width: 32px
     top: 50%
     transform: translateY(-50%)
     left: 24px
@@ -254,7 +253,6 @@ ul,li
     top: 2px
     background: url(images/icons/upper-bullet.svg) center no-repeat
 
-
 .intro-img
   position: relative
 
@@ -287,6 +285,7 @@ ul,li
 .rankings__wrapper
   width: 800px
   margin: 0 auto
+  margin-bottom: 64px
 
 .rankings__item-num-block
   width: 67px
@@ -309,12 +308,29 @@ ul,li
   .rankings__item-num
     color: #fededd
 
+  .info-text
+    &:before
+      background: url(images/icons/info-icon-red.svg)
+
 .text-box--happiest
   .rate-block
     background: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
 
   .rankings__item-num
     color: #d7eef0
+
+  .info-text
+    &:before
+      background: url(images/icons/info-icon-green.svg)
+
+.graph__wrapper
+  padding: 16px
+  border: 1px solid #d7dfe4
+  border-radius: 4px
+  margin: 0 45px 0 45px
+
+.graph-img
+  width: 100%
 
 .btn-container
   display: flex
@@ -333,6 +349,7 @@ ul,li
   border: 1px solid #d31858
   cursor: pointer
   box-sizing: border-box
+  transition: .25s ease-out
   &:after
     content: ''
     display: inline-block
@@ -564,6 +581,7 @@ ul,li
       border-bottom: none
 
 .rate-block
+  min-width: 52px
   background: #2137B2
   border-radius: 3px
   font-size: 14px
@@ -579,17 +597,6 @@ ul,li
   overflow hidden
   box-sizing border-box
   flex-shrink: 0
-  &:before
-    content ''
-    background-size: 100% auto
-    display: block
-    background-image: url(images/svg/icon_rate.svg)
-    position: absolute
-    background-repeat: no-repeat
-    width: 13px
-    height: 18px
-    left: 10px
-    top: 6px
 
 .mobile-only-show
   display: none

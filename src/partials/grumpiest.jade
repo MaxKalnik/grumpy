@@ -4,12 +4,12 @@
 
   .intro-img
     picture
-      source(media='(max-width: 320px)', srcset='images/photo/grumpiest-320.png, images/photo/grumpiest-320@2x.png 2x')
-      source(media='(max-width: 779px)', srcset='images/photo/grumpiest-320.png, images/photo/grumpiest-780@2x.png 2x')
+
+      source(media='(max-width: 779px)', srcset='images/photo/grumpiest-740.png, images/photo/grumpiest-740@2x.png 2x')
       source(media='(max-width: 1019px)', srcset='images/photo/grumpiest-780.png, images/photo/grumpiest-780@2x.png 2x')
       source(media='(max-width: 1439px)', srcset='images/photo/grumpiest-1020.png, images/photo/grumpiest-1020@2x.png 2x')
       source(media='(max-width: 1849px)', srcset='images/photo/grumpiest.png, images/photo/grumpiest@2x.png 2x')
-      img.grumpy-img(src='images/photo/grumpiest-1920.png', srcset='images/photo/grumpiest-1920@2x.png 2x')
+      img.main-img(src='images/photo/grumpiest-1920.png', srcset='images/photo/grumpiest-1920@2x.png 2x')
 
     picture
       source(media='(max-width: 779px)', srcset='images/photo/grumpy-img-xsmall.png, images/photo/grumpy-img-xsmall@2x.png 2x')
@@ -158,6 +158,17 @@
       p.rankings__item-text
         | Unsurprisingly, New York makes the top ten. Yet some may be surprised that the Empire State comes in at a perhaps unexpectedly low number nine. New York is modestly overrepresented in our data set, with the eighth most one- and two-star reviews over the baseline expected for its population share (6.11% of the total US population), and an average rating of 3.97.
 
+  .graph__wrapper
+    p.info-text
+      | This chart shows the number of complaints and the overall score. But even if the number of complaints is high, the overall rating may not coincider. To see the general table for all data, use the button below.
+
+    picture
+      source(media='(max-width: 779px)', srcset='images/photo/grump-scheme-740.png, images/photo/grump-scheme-740@2x.png 2x')
+      source(media='(max-width: 1019px)', srcset='images/photo/grump-scheme-780.png, images/photo/grump-scheme-780@2x.png 2x')
+      source(media='(max-width: 1439px)', srcset='images/photo/grump-scheme.png, images/photo/grump-scheme@2x.png 2x')
+      source(media='(max-width: 1849px)', srcset='images/photo/grump-scheme.png, images/photo/grump-scheme@2x.png 2x')
+      img.graph-img(src='images/photo/grump-scheme.png', srcset='images/photo/grump-scheme@2x.png 2x')
+
   .btn-container
-    a.btn-main(href='/overall-ranking.html')
+    a.btn-main(href='/grumpiest-full.html')
       span.btn-main__text Click here for the full ranking of The grumpiest

@@ -1,0 +1,514 @@
+-
+  var values = [
+    {
+      rank: 1,
+      state: "DC",
+      score: 94.03,
+      badReviews: 1,
+      negativeReviews: 8,
+      averageRating: 2,
+      grumpy: 14.25,
+      averageReview: 3.85
+    },
+    {
+      rank: 2,
+      state: "CO",
+      score: 74.52,
+      badReviews: 6,
+      negativeReviews: 3,
+      averageRating: 1,
+      grumpy: 15.94,
+      averageReview: 3.84
+    },
+    {
+      rank: 3,
+      state: "OR",
+      score: 68.93,
+      badReviews: 5,
+      negativeReviews: 4,
+      averageRating: 4,
+      grumpy: 14.98,
+      averageReview: 3.89
+    },
+    {
+      rank: 4,
+      state: "CA",
+      score: 66.49,
+      badReviews: 3,
+      negativeReviews: 7,
+      averageRating: 6,
+      grumpy: 14.44,
+      averageReview: 3.91
+    },
+    {
+      rank: 5,
+      state: "AZ",
+      score: 66.13,
+      badReviews: 4,
+      negativeReviews: 5,
+      averageRating: 8,
+      grumpy: 14.81,
+      averageReview: 3.93
+    },
+    {
+      rank: 6,
+      state: "NV",
+      score: 63.17,
+      badReviews: 11,
+      negativeReviews: 6,
+      averageRating: 5,
+      grumpy: 14.79,
+      averageReview: 3.89
+    },
+    {
+      rank: 7,
+      state: "MA",
+      score: '61.90',
+      badReviews: 2,
+      negativeReviews: 19,
+      averageRating: 13,
+      grumpy: 12.65,
+      averageReview: 3.97
+    },
+    {
+      rank: 8,
+      state: "WA",
+      score: 57.88,
+      badReviews: 7,
+      negativeReviews: 13,
+      averageRating: 9,
+      grumpy: 13.31,
+      averageReview: 3.93
+    },
+    {
+      rank: 9,
+      state: "NY",
+      score: 54.66,
+      badReviews: 8,
+      negativeReviews: 15,
+      averageRating: 11,
+      grumpy: 13.06,
+      averageReview: 3.97
+    },
+    {
+      rank: 10,
+      state: "KY",
+      score: 54.64,
+      badReviews: 23,
+      negativeReviews: 1,
+      averageRating: 44,
+      grumpy: 19.1,
+      averageReview: 4.08
+    },
+    {
+      rank: 11,
+      state: "IL",
+      score: 51.64,
+      badReviews: 9,
+      negativeReviews: 18,
+      averageRating: 15,
+      grumpy: 12.68,
+      averageReview: 3.99
+    },
+    {
+      rank: 12,
+      state: "TX",
+      score: '48.60',
+      badReviews: 10,
+      negativeReviews: 17,
+      averageRating: 33,
+      grumpy: 12.69,
+      averageReview: 4.05
+    },
+    {
+      rank: 13,
+      state: "OH",
+      score: 45.75,
+      badReviews: 17,
+      negativeReviews: 16,
+      averageRating: 14,
+      grumpy: 12.98,
+      averageReview: 3.97
+    },
+    {
+      rank: 14,
+      state: "IN",
+      score: 45.63,
+      badReviews: 20,
+      negativeReviews: 11,
+      averageRating: 16,
+      grumpy: 13.92,
+      averageReview: 3.99
+    },
+    {
+      rank: 15,
+      state: "RI",
+      score: 45.47,
+      badReviews: 12,
+      negativeReviews: 20,
+      averageRating: 29,
+      grumpy: 12.21,
+      averageReview: 4.04
+    },
+    {
+      rank: 16,
+      state: "NM",
+      score: 42.73,
+      badReviews: 22,
+      negativeReviews: 12,
+      averageRating: 12,
+      grumpy: 13.45,
+      averageReview: 3.97
+    },
+    {
+      rank: 17,
+      state: "CT",
+      score: 42.48,
+      badReviews: 13,
+      negativeReviews: 35,
+      averageRating: 22,
+      grumpy: 11.13,
+      averageReview: 4.02
+    },
+    {
+      rank: 18,
+      state: "WY",
+      score: 41.17,
+      badReviews: 37,
+      negativeReviews: 2,
+      averageRating: 3,
+      grumpy: 16.67,
+      averageReview: 3.85
+    },
+    {
+      rank: 19,
+      state: "VT",
+      score: 39.67,
+      badReviews: 14,
+      negativeReviews: 27,
+      averageRating: 27,
+      grumpy: 11.52,
+      averageReview: 4.04
+    },
+    {
+      rank: 20,
+      state: "MD",
+      score: 37.51,
+      badReviews: 16,
+      negativeReviews: 37,
+      averageRating: 28,
+      grumpy: 11.11,
+      averageReview: 4.04
+    },
+    {
+      rank: 21,
+      state: "AK",
+      score: 35.95,
+      badReviews: 15,
+      negativeReviews: 41,
+      averageRating: 32,
+      grumpy: 10.49,
+      averageReview: 4.04
+    },
+    {
+      rank: 22,
+      state: "VA",
+      score: 35.57,
+      badReviews: 18,
+      negativeReviews: 38,
+      averageRating: 21,
+      grumpy: 10.96,
+      averageReview: 4.02
+    },
+    {
+      rank: 23,
+      state: "PA",
+      score: 34.86,
+      badReviews: 19,
+      negativeReviews: 32,
+      averageRating: 31,
+      grumpy: 11.33,
+      averageReview: 4.04
+    },
+    {
+      rank: 24,
+      state: "UT",
+      score: 33.89,
+      badReviews: 34,
+      negativeReviews: 9,
+      averageRating: 7,
+      grumpy: 14.07,
+      averageReview: 3.92
+    },
+    {
+      rank: 25,
+      state: "OK",
+      score: 32.79,
+      badReviews: 35,
+      negativeReviews: 10,
+      averageRating: 10,
+      grumpy: 14.01,
+      averageReview: 3.95
+    },
+    {
+      rank: 26,
+      state: "MN",
+      score: '30.90',
+      badReviews: 24,
+      negativeReviews: 26,
+      averageRating: 23,
+      grumpy: 11.58,
+      averageReview: 4.03
+    },
+    {
+      rank: 27,
+      state: "HI",
+      score: 29.52,
+      badReviews: 21,
+      negativeReviews: 43,
+      averageRating: 38,
+      grumpy: 10.18,
+      averageReview: 4.06
+    },
+    {
+      rank: 28,
+      state: "MI",
+      score: 28.83,
+      badReviews: 26,
+      negativeReviews: 25,
+      averageRating: 34,
+      grumpy: 11.63,
+      averageReview: 4.05
+    },
+    {
+      rank: 29,
+      state: "MO",
+      score: 26.97,
+      badReviews: 31,
+      negativeReviews: 22,
+      averageRating: 19,
+      grumpy: 11.67,
+      averageReview: 4.01
+    },
+    {
+      rank: 30,
+      state: "NC",
+      score: 26.85,
+      badReviews: 28,
+      negativeReviews: 31,
+      averageRating: 35,
+      grumpy: 11.37,
+      averageReview: 4.05
+    },
+    {
+      rank: 31,
+      state: "GA",
+      score: 26.16,
+      badReviews: 29,
+      negativeReviews: 34,
+      averageRating: 24,
+      grumpy: 11.23,
+      averageReview: 4.03
+    },
+    {
+      rank: 32,
+      state: "ME",
+      score: 23.08,
+      badReviews: 25,
+      negativeReviews: 48,
+      averageRating: 25,
+      grumpy: 9.78,
+      averageReview: 4.03
+    },
+    {
+      rank: 33,
+      state: "FL",
+      score: 22.84,
+      badReviews: 30,
+      negativeReviews: 40,
+      averageRating: 41,
+      grumpy: 10.87,
+      averageReview: 4.07
+    },
+    {
+      rank: 34,
+      state: "NH",
+      score: 17.97,
+      badReviews: 27,
+      negativeReviews: 51,
+      averageRating: 45,
+      grumpy: 8.76,
+      averageReview: 4.1
+    },
+    {
+      rank: 35,
+      state: "WI",
+      score: 17.41,
+      badReviews: 33,
+      negativeReviews: 46,
+      averageRating: 40,
+      grumpy: 9.96,
+      averageReview: 4.07
+    },
+    {
+      rank: 36,
+      state: "SC",
+      score: 17.13,
+      badReviews: 38,
+      negativeReviews: 23,
+      averageRating: 37,
+      grumpy: 11.67,
+      averageReview: 4.06
+    },
+    {
+      rank: 37,
+      state: "DE",
+      score: '17.10',
+      badReviews: 32,
+      negativeReviews: 50,
+      averageRating: 48,
+      grumpy: 9.41,
+      averageReview: 4.1
+    },
+    {
+      rank: 38,
+      state: "TN",
+      score: '14.70',
+      badReviews: 39,
+      negativeReviews: 36,
+      averageRating: 42,
+      grumpy: 11.12,
+      averageReview: 4.07
+    },
+    {
+      rank: 39,
+      state: "NJ",
+      score: 14.21,
+      badReviews: 36,
+      negativeReviews: 49,
+      averageRating: 43,
+      grumpy: 9.75,
+      averageReview: 4.07
+    },
+    {
+      rank: 40,
+      state: "AR",
+      score: 13.44,
+      badReviews: 40,
+      negativeReviews: 14,
+      averageRating: 36,
+      grumpy: 13.09,
+      averageReview: 4.05
+    },
+    {
+      rank: 41,
+      state: "NE",
+      score: 5.89,
+      badReviews: 42,
+      negativeReviews: 24,
+      averageRating: 30,
+      grumpy: 11.66,
+      averageReview: 4.04
+    },
+    {
+      rank: 42,
+      state: "MT",
+      score: 5.26,
+      badReviews: 41,
+      negativeReviews: 30,
+      averageRating: 18,
+      grumpy: 11.38,
+      averageReview: 4
+    },
+    {
+      rank: 43,
+      state: "KS",
+      score: -2.24,
+      badReviews: 43,
+      negativeReviews: 39,
+      averageRating: 39,
+      grumpy: 10.95,
+      averageReview: 4.06
+    },
+    {
+      rank: 44,
+      state: "LA",
+      score: -7.68,
+      badReviews: 44,
+      negativeReviews: 44,
+      averageRating: 51,
+      grumpy: 10.02,
+      averageReview: 4.16
+    },
+    {
+      rank: 45,
+      state: "ID",
+      score: '-8.90',
+      badReviews: 45,
+      negativeReviews: 33,
+      averageRating: 17,
+      grumpy: 11.24,
+      averageReview: 4
+    },
+    {
+      rank: 46,
+      state: "IA",
+      score: -13.27,
+      badReviews: 46,
+      negativeReviews: 45,
+      averageRating: 46,
+      grumpy: 9.98,
+      averageReview: 4.1
+    },
+    {
+      rank: 47,
+      state: "WV",
+      score: '-15.60',
+      badReviews: 47,
+      negativeReviews: 29,
+      averageRating: 20,
+      grumpy: 11.43,
+      averageReview: 4.02
+    },
+    {
+      rank: 48,
+      state: "AL",
+      score: -23.59,
+      badReviews: 48,
+      negativeReviews: 42,
+      averageRating: 47,
+      grumpy: 10.29,
+      averageReview: 4.1
+    },
+    {
+      rank: 49,
+      state: "ND",
+      score: -40.91,
+      badReviews: 49,
+      negativeReviews: 21,
+      averageRating: 49,
+      grumpy: 12.11,
+      averageReview: 4.1
+    },
+    {
+      rank: 50,
+      state: "MS",
+      score: -63.73,
+      badReviews: 50,
+      negativeReviews: 47,
+      averageRating: 50,
+      grumpy: 9.85,
+      averageReview: 4.13
+    },
+    {
+      rank: 51,
+      state: "SD",
+      score: -89.69,
+      badReviews: 51,
+      negativeReviews: 28,
+      averageRating: 26,
+      grumpy: 11.45,
+      averageReview: 4.04
+    }
+
+  ]

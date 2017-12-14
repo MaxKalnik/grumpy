@@ -5,12 +5,11 @@
 
   .intro-img
     picture
-      source(media='(max-width: 320px)', srcset='images/photo/happiest-320.png, images/photo/happiest-320@2x.png 2x')
-      source(media='(max-width: 779px)', srcset='images/photo/happiest-320.png, images/photo/happiest-780@2x.png 2x')
+      source(media='(max-width: 779px)', srcset='images/photo/happiest-740.png, images/photo/happiest-740@2x.png 2x')
       source(media='(max-width: 1019px)', srcset='images/photo/happiest-780.png, images/photo/happiest-780@2x.png 2x')
       source(media='(max-width: 1439px)', srcset='images/photo/happiest-1020.png, images/photo/happiest-1020@2x.png 2x')
       source(media='(max-width: 1849px)', srcset='images/photo/happiest.png, images/photo/happiest@2x.png 2x')
-      img.happy-img(src='images/photo/happiest-1920.png', srcset='images/photo/happiest-1920@2x.png 2x')
+      img.main-img(src='images/photo/happiest-1920.png', srcset='images/photo/happiest-1920@2x.png 2x')
 
     picture
       source(media='(max-width: 779px)', srcset='images/photo/happy-img-xsmall.png, images/photo/happy-img-xsmall@2x.png 2x')
@@ -159,6 +158,17 @@
       p.rankings__item-text
         | Completing our list of states home to tourists with sunny dispositions is the Sunshine State, Florida. Edging out Wisconsin on this metric, Floridians have the ten highest average hotel review rating, 4.07. There were 657 fewer one- or two-star reviews than the 2,246 we expected to find in a data set of this size, based on Florida’s 6.38% proportion of the total US population. In our data set, only 10.87% of reviews by Floridians were negative, well below the national average.
 
+  .graph__wrapper
+    p.info-text
+      | This chart shows the number of complaints and the overall score. But even if the number of complaints is high, the overall rating may not coincider. To see the general table for all data, use the button below.
+
+    picture
+      source(media='(max-width: 779px)', srcset='images/photo/happy-scheme-740.png, images/photo/happy-scheme-740@2x.png 2x')
+      source(media='(max-width: 1019px)', srcset='images/photo/happy-scheme-780.png, images/photo/happy-scheme-780@2x.png 2x')
+      source(media='(max-width: 1439px)', srcset='images/photo/happy-scheme.png, images/photo/happy-scheme@2x.png 2x')
+      source(media='(max-width: 1849px)', srcset='images/photo/happy-scheme.png, images/photo/happy-scheme@2x.png 2x')
+      img.graph-img(src='images/photo/happy-scheme.png', srcset='images/photo/happy-scheme@2x.png 2x')
+
   .btn-container
-    a.btn-main(href='/overall-ranking.html')
+    a.btn-main(href='/happiest-full.html')
       span.btn-main__text Click here for the full ranking of The Happiest
