@@ -15,7 +15,9 @@
   .main-pic__mask
 .text-box.text-box--upper
   .upper-pic
-    img(src='images/svg/main-icon.svg', alt='Grumpy Icon')
+    picture
+      source(media='(max-width: 779px)', srcset='images/photo/main-icon-780.png, images/photo/main-icon-780@2x.png 2x')
+      img(src='images/photo/main-icon.png', srcset='images/photo/main-icon@2x.png 2x' alt='Grumpy Icon')
   p.under-title
     | Everyone develops an opinion concerning the nature and disposition of tourists and fellow-travelers, whether it has been acquired through their own experiences or through second-hand accounts. We come to a partially-informed perspective as to who are the most grumpy or good-natured, usually according to where they call home.
 
@@ -41,5 +43,5 @@
 
     p.main-text
       span.semibold
-        | We then combined these three into composite scores for grumpiness and happiness.
+        | We then combined these three into composite scores for grumpiness.
 

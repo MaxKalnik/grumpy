@@ -1,9 +1,11 @@
 doctype html
 head
+  script(type='text/javascript', src='https://www.gstatic.com/charts/loader.js')
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   link(inline='', rel='stylesheet', type='text/css', href='style.min.css')
   title Which U.S. States Are Home to the Grumpiest and Happiest Travelers?
+
 
 body
   .page__wrap
@@ -19,11 +21,14 @@ body
 
         include ./partials/happiest.jade
 
+        include ./partials/map-grumpy.jade
+
         include ./partials/methodology.jade
 
         include ./partials/related.jade
 
+        include ./partials/pswp.jade
+
     include ./partials/footer.jade
 
   script(type='text/javascript', src='js/script.min.js')
-

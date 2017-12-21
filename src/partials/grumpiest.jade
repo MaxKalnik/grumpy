@@ -1,6 +1,6 @@
 .text-box.text-box--grumpiest.text-box--wide
   h2.block-title
-    | The Grumpiest
+    | The Grumpiest States
 
   .intro-img
     picture
@@ -29,7 +29,7 @@
           | 1
 
       p.rankings__item-text
-        | Washington, D.C. takes first place as the home of the grumpiest tourists nation-wide. While its license plates may read “taxation without representation,” D.C. is the most over-represented in our set of negative hotel reviews, with 882 more than we estimated based on its 0.2% share of the US population. DC also ranked second lowest average hotel rating, with 14.25% of all reviews being 1 or 2-star.
+        | While not technically a state, we couldn't leave out our nation's capitol. D.C. takes first place as the home of the grumpiest tourists nation-wide. While its license plates may read “taxation without representation,” D.C. is the most over-represented in our set of negative hotel reviews, with 882 more than we estimated based on its 0.2% share of the US population. D.C. also has the second lowest average hotel rating, with 14.25% of all reviews being one- or two-star.
 
     .rankings__item
       .rankings__item-header
@@ -71,7 +71,7 @@
           | 4
 
       p.rankings__item-text
-        | With the third highest excess negative review rate of 44.47% over the number expected based on its 12.15% of the US population and the total number of reviews in our data set, California only comes in fourth due to its lower scores on our other two metrics. With “only” 14.40% of the 42,111 reviews by Californians were negative, with the average review modestly higher than D.C., Oregon & Colorado, at 3.91, California ranks seventh and sixth by these measures.
+        | With the third highest excess negative review rate of 44.47% over the number expected based on its 12.15% share of the US population and the total number of reviews in our data set, California only comes in fourth due to its lower scores on our other two metrics. With “only” 14.40% of the 42,111 reviews by Californians were negative, with the average review modestly higher than D.C., Oregon & Colorado, at 3.91, California ranks seventh and sixth by these measures.
 
     .rankings__item
       .rankings__item-header
@@ -100,7 +100,7 @@
           | 6
 
       p.rankings__item-text
-        | While Nevada is only modestly over-represented in our excess negative reviews category (ranked 11th), it comes in at number six on our list due to its relatively high percentage of poor reviews (14.78% grumpy of 2509 total reviews; ranked 6th) and an average review of 3.89 (lower than both California and Arizona, ranked 5th).
+        | While Nevada is only modestly over-represented in our excess negative reviews category (ranked 11th), it comes in at number six on our list due to its relatively high percentage of poor reviews (14.78% grumpy of 2,509 total reviews; ranked sixth) and an average review of 3.89 (lower than both California and Arizona, ranked fifth).
 
     .rankings__item
       .rankings__item-header
@@ -128,7 +128,7 @@
           | 8
 
       p.rankings__item-text
-        | Ranked eighth in the country for discontent travelers is Washington State, with an average hotel rating of 3.93 over 7575 reviews (9th), a 13.31% negative review rate (13th), and 28% more negative reviews than expected. At this point, a common thread has emerged: seven of the top eight states with the orneriest tourists have recently legalized recreational cannabis use. Of all states that have done so, only two did not make our top ten: Alaska (21st) and Maine (32nd).
+        | Ranked eighth in the country for discontent travelers is Washington State, with an average hotel rating of 3.93 over 7,575 reviews (9th), a 13.31% negative review rate (13th), and 28% more negative reviews than expected. At this point, a common thread has emerged: seven of the top eight states with the orneriest tourists have recently legalized recreational cannabis use. Of all states that have done so, only two did not make our top ten: Alaska (21st) and Maine (32nd).
 
     .rankings__item
       .rankings__item-header
@@ -156,19 +156,23 @@
           | 10
 
       p.rankings__item-text
-        | Unsurprisingly, New York makes the top ten. Yet some may be surprised that the Empire State comes in at a perhaps unexpectedly low number nine. New York is modestly overrepresented in our data set, with the eighth most one- and two-star reviews over the baseline expected for its population share (6.11% of the total US population), and an average rating of 3.97.
+        | Last on our list, but certainly not the least grumpy – at least on one metric – is of Kentucky. With one of the highest average hotel ratings of 4.09 (eighth highest), and fewer total one- and two-star reviews than expected in our data set proportional to population (ranked 23rd), it is on the strength of sheer crankiness that Kentucky appears at number 10 on our list. With fully 19.10% of the 2,047 reviews in our data set, Kentuckians rank first on this metric.
 
   .graph__wrapper
     p.info-text
-      | This chart shows the number of complaints and the overall score. But even if the number of complaints is high, the overall rating may not coincider. To see the general table for all data, use the button below.
+      | This chart shows the number of complaints and the overall score. But even if the number of complaints is high, the overall rating may not coincide. To see the full data, click the button.
 
-    picture
-      source(media='(max-width: 779px)', srcset='images/photo/grump-scheme-740.png, images/photo/grump-scheme-740@2x.png 2x')
-      source(media='(max-width: 1019px)', srcset='images/photo/grump-scheme-780.png, images/photo/grump-scheme-780@2x.png 2x')
-      source(media='(max-width: 1439px)', srcset='images/photo/grump-scheme.png, images/photo/grump-scheme@2x.png 2x')
-      source(media='(max-width: 1849px)', srcset='images/photo/grump-scheme.png, images/photo/grump-scheme@2x.png 2x')
-      img.graph-img(src='images/photo/grump-scheme.png', srcset='images/photo/grump-scheme@2x.png 2x')
+    .graph-img__wrapper.graph-img__wrapper--grumpy
+      picture
+        source(media='(min-width: 1850px)', srcset='images/photo/grump-scheme-1920.png, images/photo/grump-scheme-1920@2x.png 2x')
+        source(media='(max-width: 779px)', srcset='images/photo/grump-scheme-780.png, images/photo/grump-scheme-780@2x.png 2x')
+        source(media='(max-width: 1019px)', srcset='images/photo/grump-scheme-780.png, images/photo/grump-scheme-780@2x.png 2x')
+        source(media='(max-width: 1439px)', srcset='images/photo/grump-scheme.png, images/photo/grump-scheme@2x.png 2x')
+        img.graph-img(src='images/photo/grump-scheme.png', srcset='images/photo/grump-scheme@2x.png 2x')
+
+      a.graph-img__mobile-only(href="")
+        span Tap to review full size
 
   .btn-container
-    a.btn-main(href='/grumpiest-full.html')
-      span.btn-main__text Click here for the full ranking of The grumpiest
+    a.btn-main(href='/grumpy-full.html')
+      span.btn-main__text Click here for the full ranking
