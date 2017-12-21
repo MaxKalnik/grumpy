@@ -1,6 +1,5 @@
 $(document).ready(function () {
     var body = $('body');
-    var galEl;
 
     body.on('click', '.mobile-only-show', function(event){
         event.preventDefault();
@@ -95,7 +94,7 @@ $(document).ready(function () {
 
     });
     $(window).resize(function() {
-      location.reload();
+      google.charts.setOnLoadCallback(drawRegionsMap);
     });
 
     function btnClick(elem, initColor, ultColor) {
