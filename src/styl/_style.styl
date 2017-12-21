@@ -5,6 +5,9 @@ body
   $ultraThin()
   color: #0A0C0D
 
+button
+  font-family: Whitney SSm A, sans-serif
+
 .main-article
   &--table
     margin-bottom: 290px
@@ -90,6 +93,7 @@ ul,li
 .breadcrumbs
   &__wrap
     display: flex
+    width: auto
     background-color: rgba(255, 255, 255, .9)
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10)
     border-radius: 2px
@@ -197,15 +201,13 @@ ul,li
   line-height: 26px
   font-weight: 300
   font-style: italic
-  border: 1px solid #ABD7F1
   border-radius: 5px
-  margin-bottom: 45px
   box-sizing: border-box
   &:before
     content: ''
     position: absolute
-    height: 24px
-    width: 24px
+    height: 32px
+    width: 32px
     top: 50%
     transform: translateY(-50%)
     left: 24px
@@ -254,7 +256,6 @@ ul,li
     top: 2px
     background: url(images/icons/upper-bullet.svg) center no-repeat
 
-
 .intro-img
   position: relative
 
@@ -266,8 +267,9 @@ ul,li
 .rankings__item
   display: flex
   flex-wrap: wrap
-  &:not(:last-child)
-    margin-bottom: 45px
+  margin-bottom: 45px
+  &:last-child
+    margin-bottom: 0
 
 .rankings__item-header
   display: flex
@@ -287,6 +289,7 @@ ul,li
 .rankings__wrapper
   width: 800px
   margin: 0 auto
+  margin-bottom: 64px
 
 .rankings__item-num-block
   width: 67px
@@ -309,12 +312,29 @@ ul,li
   .rankings__item-num
     color: #fededd
 
+  .info-text
+    &:before
+      background: url(images/icons/info-icon-red.svg)
+
 .text-box--happiest
   .rate-block
     background: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
 
   .rankings__item-num
     color: #d7eef0
+
+  .info-text
+    &:before
+      background: url(images/icons/info-icon-green.svg)
+
+.graph__wrapper
+  padding: 16px
+  border: 1px solid #d7dfe4
+  border-radius: 4px
+  margin: 0 45px 0 45px
+
+.graph-img
+  width: 100%
 
 .btn-container
   display: flex
@@ -333,6 +353,7 @@ ul,li
   border: 1px solid #d31858
   cursor: pointer
   box-sizing: border-box
+  transition: .25s ease-out
   &:after
     content: ''
     display: inline-block
@@ -354,6 +375,10 @@ ul,li
       background: url('images/icons/btn-icon-hover.svg') center no-repeat
     .btn-main__text
       border-bottom: none
+
+.text-box--map
+  .block-title
+    margin-bottom: 0
 
 .text-box--grumpiest
   .btn-main
@@ -381,15 +406,189 @@ ul,li
       color: #ffffff
       background-image: linear-gradient(-90deg, #39ADB6 0%, #30A0AB 100%)
 
-
   .btn-main__text
     border-bottom: 1px solid #dbeef0
+
+.map__user-block
+  display: flex
+  flex-direction: row-reverse
+
+.map-btn__wrapper
+  position: relative
+  margin-left: 32px
+  &:first-child
+    margin-left: 0
+
+.map-btn__wrapper--share
+  order: 2
+
+.map-btn
+  position: relative
+  width: 128px
+  height: 58px
+  padding: 16px
+  text-align: center
+  border: 1px solid #fedfdd
+  border-radius: 5px
+  box-sizing: border-box
+  cursor: pointer
+  transition: .25s ease-in
+  background: #ffffff
+
+  &:hover
+    background: #fedfdd
+
+    .map-btn__text
+      border-bottom: 1px solid transparent
+
+.map-btn--share
+  &:after
+    content: ''
+    position: relative
+    display: inline-block
+    width: 16px
+    height: 16px
+    margin-left: 8px
+    top: 3px
+    background: url(images/svg/share-icon.svg) center no-repeat
+
+.map-btn--embed
+  &:after
+    content: ''
+    position: relative
+    display: inline-block
+    width: 27px
+    height: 16px
+    margin-left: 8px
+    top: 3px
+    background: url(images/svg/embed-icon.svg) center no-repeat
+
+.map-btn__container--share
+  position: absolute
+  visibility: hidden
+  top: 55px
+  left: -10px
+  padding: 18px 0
+
+.map-btn__socials
+  position: relative
+  display: flex
+  padding: 24px
+  border: 1px solid #fedfdd
+  border-radius: 3px
+  background: #ffffff
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.10)
+  &:before
+    content: ''
+    position: absolute
+    top: -8px
+    left: 50%
+    transform: translateX(-50%)
+    width: 18px
+    height: 8px
+    background: url(images/svg/triangle.svg)
+    background-size: cover
+    border-bottom: 1px solid #ffffff
+
+.map-btn__socials-item
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  box-sizing: border-box
+  margin-right: 12px
+
+  &:last-child
+    margin-right: 0
+
+  &:hover
+    background: #edf0f5
+
+.map-btn__socials-item--fb
+  border: 1px solid #3d5e96
+
+.map-btn__socials-item--tw
+  border: 1px solid #46ADE9 46ade9
+
+.map-btn__socials-item--go
+  border: 1px solid #fedfdd
+
+.map-btn__container--embed
+  position: absolute
+  visibility: hidden
+  top: 55px
+  right: 0
+  padding: 18px 0
+
+.map-btn__embed
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 400px
+  padding: 24px
+  background: #ffffff
+  border-radius: 3px
+  border: 1px solid #fedfdd
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.10)
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: -8px
+    right: 47px
+    transform: translateX(-50%)
+    width: 18px
+    height: 8px
+    background: url(images/svg/triangle.svg)
+    background-size: cover
+    border-bottom: 1px solid #ffffff
+
+.map-btn__embed-text
+  height: 64px
+  overflow-y: scroll
+  margin-bottom: 16px
+  font-size: 12px
+  line-height: 16px
+  border: 1px solid #cececf
+  border-radius: 3px
+
+.map-btn__embed-copy
+  width: 156px
+  display: inline-block
+  color: #ffffff
+  text-transform: uppercase
+  font-size: 12px
+  line-height: 16px
+  font-weight: 600
+  padding: 8px 14px 8px 14px
+  outline: none
+  border: none
+  background: #fc6860
+  border-radius: 3px
+  cursor: pointer
+  margin: 0 auto
+  &:hover
+    background: rgba(252, 104, 96, .85)
+
+.map-btn__text
+  font-size: 12px
+  line-height: 26px
+  color: #FC6860
+  font-weight: 600
+  border-bottom: 1px solid #fedfdd
+  text-transform: uppercase
+  transition: .25s ease-in
 
 .text-box--methodology
   border-radius: 0 0 5px 5px
   .main-text
     &:not(:last-child)
       margin-bottom: 24px
+
+.map-btn__container.visible
+  visibility: visible
 
 .methodology-content
   display: flex
@@ -564,6 +763,7 @@ ul,li
       border-bottom: none
 
 .rate-block
+  min-width: 52px
   background: #2137B2
   border-radius: 3px
   font-size: 14px
@@ -579,17 +779,6 @@ ul,li
   overflow hidden
   box-sizing border-box
   flex-shrink: 0
-  &:before
-    content ''
-    background-size: 100% auto
-    display: block
-    background-image: url(images/svg/icon_rate.svg)
-    position: absolute
-    background-repeat: no-repeat
-    width: 13px
-    height: 18px
-    left: 10px
-    top: 6px
 
 .mobile-only-show
   display: none
@@ -622,3 +811,22 @@ ul,li
     border: 1px solid transparent
     background: #f8dce5
     transition: .25s
+
+.map-wrapper
+  overlow-x: scroll
+
+.graph-img__mobile-only
+  text-align center
+  font-size: 12px
+  color: $main_color
+  letter-spacing: 0
+  line-height: 22px
+  margin: 0 auto
+  margin-top: 12px
+  display: none
+  span
+    border-bottom: 1px dotted $main_color
+    margin-left: 8px
+  &:hover
+    span
+      border-bottom: none

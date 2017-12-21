@@ -76,6 +76,9 @@
     background-position center
     padding: 32px 45px 45px 25px
 
+  .main-pic__mask
+    background: linear-gradient(-179deg, rgba(0,0,0,0.00) 2%, rgba(1,4,5,0.21) 35%, #05131A 100%)
+
   .text-box
     padding: 45px
     &--upper
@@ -144,6 +147,7 @@
 
   .main-pic__mask
     height: 568px
+    background: linear-gradient(-179deg, rgba(0,0,0,0.00) 2%, rgba(1,4,5,0.21) 35%, #05131A 100%)
 
   .top-menu__link
     margin: 0 10px
@@ -159,6 +163,9 @@
 
       .under-title
         margin-bottom: 32px
+
+  .graph__wrapper
+    border: 1px solid transparent
 
   .small-img
     right: 25px
@@ -181,12 +188,17 @@
 
   .info-text
     width: 690px
+    display: none
 
   .rankings__wrapper
     width: 620px
 
   .rankings__item-text
     width: 540px
+
+  .graph__wrapper
+    margin-left: 25px
+    margin-right: 25px
 
   .related-head
     padding: 0 20px
@@ -262,11 +274,12 @@
       margin-botoom: 0
 
   .main-pic
-    height: 345px
+    height: 454px
     padding: 16px 12px 36px 12px
 
   .main-pic__mask
     height: 270px
+    background: linear-gradient(-179deg, rgba(0,0,0,0.00) 25%, rgba(1,4,5,0.90) 51%, #05131A 100%)
 
   .text-box
     padding: 30px 12px
@@ -279,7 +292,7 @@
         width: 100%
 
       .under-title
-        font-size: 16px
+        font-size: 15px
         line-height: 28px
         font-weight: 200
 
@@ -292,6 +305,25 @@
     padding-left: 0
     padding-right: 0
 
+  .intro-img
+    height: auto
+
+  .main-img
+    width: 100%
+    max-width: 100%
+    height: auto
+
+  .small-img
+    width: 30%
+    border-radius: 50%
+    box-shadow: 0px 6px 32px 0 #E9EAEA
+    right: 17px
+    bottom: -12px
+
+  .metrics__list-item
+    &:before
+      top: 3px
+
   .upper-pic
     position: static
     width: 250px
@@ -301,15 +333,14 @@
   .under-title
     padding-left: 0
 
-  .small-img
-    right: 68px
-    bottom: 28px
-
   .rankings__wrapper
     width: calc(100% - 24px)
+    margin-bottom: 24px
 
   .rankings__item
     margin-bottom: 32px
+    &:last-child
+      margin-bottom: 0
 
   .rankings__item-num-block
     order: 1
@@ -327,6 +358,10 @@
 
   .rankings__item-header
     margin-left: 0
+
+  .graph__wrapper
+    margin-left: 12px
+    margin-right: 12px
 
   .methodology-content
     flex-direction: column
@@ -349,7 +384,7 @@
       transform: translateX(-50%)
 
   .btn-container
-    margin: 24px 12px 0 12px
+    margin: 4px 12px 0 12px
 
   .btn-main
     width: 100%
@@ -359,6 +394,27 @@
     text-align: center
     &:after
       display: none
+
+  .map-btn
+    width: 122px
+    height: 48px
+    padding: 11px
+
+  .map-btn__text
+    font-size: 10px
+
+  .map-btn__container--share
+    top: 45px
+
+  .map-btn__container--embed
+    top: 45px
+
+  .map-btn__embed
+    width: 226px
+
+  .map__user-block
+    justify-content: center
+    margin-top: 12px
 
   .methodology-img
     margin-right: 0
@@ -432,12 +488,6 @@
     text-overflow: ellipsis
     vertical-align: top
 
-  .main-article--table
-    .breadcrumbs__item
-      &:nth-child(3)
-        overflow: hidden
-        min-width: 90px
-
   .mobile-table
     width: 100%
     margin-bottom: 16px
@@ -497,3 +547,14 @@
   .map-container__zoom
     display: none
 
+  .graph-img__mobile-only
+    display: block
+
+@media (max-width: 494px)
+  .main-pic
+    background-size: contain
+    background-position: top
+
+  .main-pic__mask
+    height: 405px
+    background-image: linear-gradient(-179deg, rgba(0,0,0,0.00) 25%, rgba(1,4,5,0.90) 46%, #05131A 100%)

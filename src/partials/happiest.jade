@@ -1,16 +1,15 @@
 .text-box.text-box--happiest.text-box--wide
   h2.block-title
-    | The Happiest
+    | The Happiest State
 
 
   .intro-img
     picture
-      source(media='(max-width: 320px)', srcset='images/photo/happiest-320.png, images/photo/happiest-320@2x.png 2x')
-      source(media='(max-width: 779px)', srcset='images/photo/happiest-320.png, images/photo/happiest-780@2x.png 2x')
+      source(media='(max-width: 779px)', srcset='images/photo/happiest-740.png, images/photo/happiest-740@2x.png 2x')
       source(media='(max-width: 1019px)', srcset='images/photo/happiest-780.png, images/photo/happiest-780@2x.png 2x')
       source(media='(max-width: 1439px)', srcset='images/photo/happiest-1020.png, images/photo/happiest-1020@2x.png 2x')
       source(media='(max-width: 1849px)', srcset='images/photo/happiest.png, images/photo/happiest@2x.png 2x')
-      img.happy-img(src='images/photo/happiest-1920.png', srcset='images/photo/happiest-1920@2x.png 2x')
+      img.main-img(src='images/photo/happiest-1920.png', srcset='images/photo/happiest-1920@2x.png 2x')
 
     picture
       source(media='(max-width: 779px)', srcset='images/photo/happy-img-xsmall.png, images/photo/happy-img-xsmall@2x.png 2x')
@@ -44,7 +43,7 @@
           | 2
 
       p.rankings__item-text
-        | With one exception, states that made the cut as homes of the top ten happiest tourists are 1) in the South Atlantic or Midwestern regions, and/or 2) have small populations. Coming in at number two, Mississippi is not that exception. With the second highest average rating (4.125), the fourth lowest percentage of negative reviews in our data set (9.84%), and the second lowest rate of negative reviews than expected, Mississippians appear to be quite content when away from home. 
+        | With one exception, states that made the cut as homes of the top ten happiest tourists are 1) in the South Atlantic or Midwestern regions, and/or 2) have small populations. Coming in at number two, Mississippi is not that exception. With the second highest average rating (4.125), the fourth lowest percentage of negative reviews in our data set (9.84%), and the second lowest rate of negative reviews than expected, Mississippians appear to be quite content when away from home.
 
     .rankings__item
       .rankings__item-header
@@ -115,7 +114,7 @@
           | 7
 
       p.rankings__item-text
-        | At number seven, North Dakota makes our top ten on the merits of its third highest average hotel rating (4.1), and its third lowest number of one or two-star reviews as compared to our population-based estimate. North Dakota did not rank higher due to the percentage of negative reviews authored by North Dakotans being only 0.53% below the national average (21st grumpiest).
+        | At number seven, North Dakota makes our top ten on the merits of its third highest average hotel rating (4.1), and its third lowest number of one- or two-star reviews as compared to our population-based estimate. North Dakota did not rank higher due to the percentage of negative reviews authored by North Dakotans being only 0.53% below the national average.
 
     .rankings__item
       .rankings__item-header
@@ -129,7 +128,7 @@
           | 8
 
       p.rankings__item-text
-        | The eighth state to make our list is certainly an exception, and may surprise many of our readers. While some cultural stereotypes about New Jersey don’t shine its residents in a favorable light, they glide over the fact that New Jersey is both the most highly educated and the wealthiest state in the country (as well as the most densely populated). Tourists who call New Jersey home are among the most content, with the third lowest rate of negative hotel reviews in our data set, nearly 3% below the national average of 12.64% at 9.75%, and an average rating that ranks in the top ten, nationwide.
+        | The eighth state to make our list is certainly an exception, and may surprise some of our readers. While some cultural stereotypes about New Jersey don’t shine its residents in a favorable light, they glide over the fact that New Jersey is both the most highly educated and the wealthiest state in the country (as well as the most densely populated). Tourists who call New Jersey home are among the most content, with the third lowest rate of negative hotel reviews in our data set, nearly 3% below the national average of 12.64% at 9.75%, and an average rating that ranks in the top ten, nationwide.
 
     .rankings__item
       .rankings__item-header
@@ -157,8 +156,23 @@
           | 10
 
       p.rankings__item-text
-        | Completing our list of states home to tourists with sunny dispositions is the Sunshine State, Florida. Edging out Wisconsin on this metric, Floridians have the ten highest average hotel review rating, 4.07. There were 657 fewer one- or two-star reviews than the 2,246 we expected to find in a data set of this size, based on Florida’s 6.38% proportion of the total US population. In our data set, only 10.87% of reviews by Floridians were negative, well below the national average.
+        | Completing our list of states home to tourists with sunny dispositions is the Sunshine State, Florida. Edging out Wisconsin on this metric, Floridians have the ten highest average hotel review rating, 4.07. There were 657 fewer one- or two-star reviews than the 2,246 we expected to find in a data set of this size, based on Florida’s 6.38% proportion of the total U.S. population. In our data set, only 10.87% of reviews by Floridians were negative, well below the national average.
+
+  .graph__wrapper
+    p.info-text
+      | This chart shows the number of complaints and the overall score. But even if the number of complaints is high, the overall rating may not coincide. To see the full data, click the button.
+
+    .graph-img__wrapper.graph-img__wrapper--happy
+      picture
+        source(media='(min-width: 1850px)', srcset='images/photo/happy-scheme-1920.png, images/photo/happy-scheme-1920@2x.png 2x')
+        source(media='(max-width: 779px)', srcset='images/photo/happy-scheme-780.png, images/photo/happy-scheme-780@2x.png 2x')
+        source(media='(max-width: 1019px)', srcset='images/photo/happy-scheme-780.png, images/photo/happy-scheme-780@2x.png 2x')
+        source(media='(max-width: 1439px)', srcset='images/photo/happy-scheme.png, images/photo/happy-scheme@2x.png 2x')
+        img.graph-img(src='images/photo/happy-scheme.png', srcset='images/photo/happy-scheme@2x.png 2x')
+
+      a.graph-img__mobile-only(href="")
+        span Tap to review full size
 
   .btn-container
-    a.btn-main(href='/overall-ranking.html')
-      span.btn-main__text Click here for the full ranking of The Happiest
+    a.btn-main(href='/grumpy-full.html')
+      span.btn-main__text Click here for the full ranking

@@ -90,11 +90,10 @@ gulp.task('js', function () {
 // });
 
 gulp.task('jade', function(){
-    gulp.src('./src/index.jade')
+    gulp.src([dev_path.html + '*.jade'])
       .pipe(jade())
       .pipe(gulp.dest('./build/'))
 });
-
 
 
 gulp.task('images', function () {
