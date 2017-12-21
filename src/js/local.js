@@ -94,6 +94,30 @@ $(document).ready(function () {
         return false
 
     });
+    $(window).resize(function() {
+      location.reload();
+    });
+
+    function btnClick(elem, initColor, ultColor) {
+      body.on('mousedown', elem, function(event){
+        event.preventDefault();
+        $(this).css('background', initColor);
+
+        return false
+
+      });
+
+      body.on('mouseup', elem, function(event){
+          event.preventDefault();
+          $(this).css('background', ultColor);
+
+          return false
+
+      });
+    };
+    if($(window).width() < 779) {
+      btnClick('.map-btn', '#ffdad8', '#ffffff');
+    }
 
 });
 
@@ -115,11 +139,11 @@ google.charts.load('current', {'packages':['geochart'],'mapsApiKey': 'AIzaSyD-9t
 
     function drawRegionsMap() {
       var data = google.visualization.arrayToDataTable([
-          ['State', 'HappyIndex', '% Grumpy'],
+          ['State', 'GrumpIndex', '% Grumpy'],
           ['Washington D.C.', 92.81948402, 14.24951558],
           ['Colorado', 73.56762196, 15.93882069],
           ['Oregon', 68.01359529, 14.97667567],
-          ['Calofornia', 65.58714673, 14.44040749],
+          ['California', 65.58714673, 14.44040749],
           ['Arizona', 65.22188641, 14.80846198],
           ['Nevada', 62.32736325, 14.78676764],
           ['Massachusetts', 61.00683328, 12.64741387],
