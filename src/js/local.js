@@ -93,9 +93,13 @@ $(document).ready(function () {
         return false
 
     });
-    $(window).resize(function() {
+    var _onResizeWindow = function() {
       google.charts.setOnLoadCallback(drawRegionsMap);
-    });
+    };
+
+    var _onResizeWindowThrottled = _.throttle(_onResizeWindow, 300);
+
+    $(window).on('resize', _onResizeWindowThrottled);
 
     function btnClick(elem, initColor, ultColor) {
       body.on('mousedown', elem, function(event){
@@ -117,6 +121,10 @@ $(document).ready(function () {
     if($(window).width() < 779) {
       btnClick('.map-btn', '#ffdad8', '#ffffff');
     }
+
+    body.on('focus', '#copyTarget', function(event){
+          $(this).select();
+    });
 
 });
 
