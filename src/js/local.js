@@ -71,11 +71,6 @@ $(document).ready(function () {
                 $(this).parents('.top-menu__wrap').toggleClass('open');
                 return false
             });
-
-            /*$('.top-menu__wrap.open').on('click', function(){
-             $('.top-menu__wrap').removeClass('open');
-             return false
-             })*/
         }
 
     }
@@ -93,13 +88,6 @@ $(document).ready(function () {
         return false
 
     });
-    var _onResizeWindow = function() {
-      google.charts.setOnLoadCallback(drawRegionsMap);
-    };
-
-    var _onResizeWindowThrottled = _.throttle(_onResizeWindow, 300);
-
-    $(window).on('resize', _onResizeWindowThrottled);
 
     function btnClick(elem, initColor, ultColor) {
       body.on('mousedown', elem, function(event){
@@ -129,9 +117,46 @@ $(document).ready(function () {
 });
 
 function copyToClipboard(element) {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($(element).text()).select();
-      document.execCommand("copy");
-      $temp.remove();
-    }
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+
+// $(window).on('resize', function () {
+//         $('.grump-map').attr('src', $('iframe').attr('src'));
+//     });
+
+document.getElementById("copyButton").addEventListener("click", function() {
+    copyToClipboard(document.getElementById("copyTarget"));
+});
+
+// function throttle(fn, threshhold, scope) {
+//   threshhold || (threshhold = 250);
+//   var last,
+//       deferTimer;
+//   return function () {
+//     var context = scope || this;
+
+//     var now = +new Date,
+//         args = arguments;
+//     if (last && now < last + threshhold) {
+//       // hold on to it
+//       clearTimeout(deferTimer);
+//       deferTimer = setTimeout(function () {
+//         last = now;
+//         fn.apply(context, args);
+//       }, threshhold);
+//     } else {
+//       last = now;
+//       fn.apply(context, args);
+//     }
+//   };
+// };
+
+// var onResizeWindow = function() {
+//   google.charts.setOnLoadCallback(drawRegionsMap);
+// };
+
+// window.addEventListener("resize", throttle(onResizeWindow, 300));
