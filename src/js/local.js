@@ -48,22 +48,6 @@ $(document).ready(function () {
 
     });
 
-    body.on('mousedown', '.map-btn__embed-copy', function(event){
-        event.preventDefault();
-        $(this).css('background', '#fc5c55');
-
-        return false
-
-    });
-
-    body.on('mouseup', '.map-btn__embed-copy', function(event){
-        event.preventDefault();
-        $(this).css('background', '#fc746e');
-
-        return false
-
-    });
-
     function topMenu() {
         if ($(window).width() < 959) {
 
